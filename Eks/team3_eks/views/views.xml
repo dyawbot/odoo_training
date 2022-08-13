@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="team3_eks.list">
+      <field name="name">team3_eks list</field>
+      <field name="model">team3_eks.team3_eks</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="team3_eks.action_window">
+      <field name="name">team3_eks window</field>
+      <field name="res_model">team3_eks.team3_eks</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="team3_eks.action_server">
+      <field name="name">team3_eks server</field>
+      <field name="model_id" ref="model_team3_eks_team3_eks"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="team3_eks" id="team3_eks.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="team3_eks.menu_1" parent="team3_eks.menu_root"/>
+    <menuitem name="Menu 2" id="team3_eks.menu_2" parent="team3_eks.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="team3_eks.menu_1_list" parent="team3_eks.menu_1"
+              action="team3_eks.action_window"/>
+    <menuitem name="Server to list" id="team3_eks" parent="team3_eks.menu_2"
+              action="team3_eks.action_server"/>
+    -->
+  </data>
+</odoo>
